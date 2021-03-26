@@ -26,6 +26,25 @@ CREATE TABLE item
      item_price DOUBLE NOT NULL,
      PRIMARY KEY(item_id)
   );
+  
+  /*
+   * 
+   *  Kitchen orders DB
+   */
+  
+  CREATE TABLE kitchen_order
+  (
+  	id VARCHAR2(250) NOT NULL,
+  	name VARCHAR2(250) NOT NULL,
+  	temp VARCHAR2(20) NOT NULL,
+  	shelf_life NUMBER(10) NOT NULL,
+  	decay_rate DOUBLE NOT NULL,  	
+  );
+  
+  
+  
+  
+  
 
 
 

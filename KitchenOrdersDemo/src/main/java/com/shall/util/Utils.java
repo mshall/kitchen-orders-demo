@@ -14,5 +14,10 @@ public class Utils {
 	    long difference = ChronoUnit.YEARS.between(incomingLocalDate, now);
 	    return difference;
 	}
+	
+	public long getCurrentTimeInMillis() {
+		Date date = new Date();
+		return date.getTime();
+	}
 
 }

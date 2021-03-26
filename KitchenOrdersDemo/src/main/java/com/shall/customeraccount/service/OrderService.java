@@ -108,4 +108,10 @@ public class OrderService {
 		return dueAmount;
 
 	}
+
+
+	public String initiateOrderProcess() {
+		
+		return "Success";
+	}
 }

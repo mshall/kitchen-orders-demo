@@ -30,5 +30,11 @@ public class OrderController {
 		return ResponseEntity.ok(new ResponseVO<>(result));
 	}
 
+	@CrossOrigin
+	@RequestMapping(value = "/", produces = "application/json; charset=UTF-8", method = RequestMethod.GET)
+	public ResponseEntity<ResponseVO<String>> initiateOrderProcess() {
+		String result = service.initiateOrderProcess();
+		return ResponseEntity.ok(new ResponseVO<>(result));
+	}
 
 }
